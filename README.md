@@ -1,5 +1,7 @@
 # ascii-rts-castle
 
+> Public source preview: see [PUBLICATION.md](PUBLICATION.md) for actual checks, known failures and runtime limits.
+
 Многопользовательская RTS-игра с ASCII-графикой и архитектурой клиент–сервер, вдохновлённая картой "Castle Fight" из Warcraft 3.
 
 ## Описание проекта
@@ -9,7 +11,7 @@
 ### Основные возможности
 
 - **Клиент-серверная архитектура**: LAN-игра для 2–4 игроков
-- **Разнообразные юниты с уникальными характеристиками**: 
+- **Разнообразные юниты с уникальными характеристиками**:
   - **Infantry (I)**: высокий HP (160), средний урон (12), ближний бой, быстрая атака
   - **Archer (A)**: средний HP (80), дальний бой (3.5), средний урон (10)
   - **Mage (M)**: низкий HP (70), высокий урон (18), дальний бой, медленная атака
@@ -424,3 +426,8 @@ pytest && mypy src && ruff check src tests && black --check src tests
 ## Авторы
 
 [Укажите авторов проекта]
+
+
+## Public source status — 2026-10-29
+
+See [PUBLICATION.md](PUBLICATION.md) for the current verification scope, prototype limitations and runtime boundaries. Earlier audit checklists describe historical work.

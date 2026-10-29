@@ -15,7 +15,7 @@ if errorlevel 1 (
 )
 
 REM Параметры по умолчанию
-set HOST=0.0.0.0
+set HOST=127.0.0.1
 set PORT=8765
 set REQUIRED_PLAYERS=2
 set MAX_PLAYERS=4
@@ -98,4 +98,3 @@ if errorlevel 1 (
 echo.
 echo [INFO] Сервер остановлен.
 pause
-

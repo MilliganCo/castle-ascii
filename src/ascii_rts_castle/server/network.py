@@ -39,7 +39,7 @@ DEFAULT_REQUIRED_PLAYERS: int = 2
 ServerState = Literal["lobby", "running", "finished"]
 
 
-@dataclass
+@dataclass(eq=False)
 class ClientSession:
     """Сессия подключённого клиента."""
 
@@ -59,7 +59,7 @@ class GameServer:
     def __init__(
         self,
         config: GameConfig,
-        host: str = "0.0.0.0",
+        host: str = "127.0.0.1",
         port: int = 8765,
         max_players: int = DEFAULT_MAX_PLAYERS,
         required_players: int = DEFAULT_REQUIRED_PLAYERS,
